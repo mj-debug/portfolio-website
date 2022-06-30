@@ -127,3 +127,63 @@ main{
 }
 /* About ends */
 
+/* services begins */
+.services{
+    height: 100vh;
+    background-color: #EEFBFB;
+}
+.services > h1{
+    text-align: center;
+}
+.services > p{
+    text-align: center;
+}
+.services-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.services-grid > .services-grid-one{
+    height: 50vh;
+    background-color: blue;
+}
+.services-grid > .services-grid-one > ul{
+    display: flex;
+    flex-direction: column;
+}
+.services-grid > .services-grid-one > ul > li{
+    list-style-type: none;
+}
+.services-grid > .services-grid-one > ul > li > a{
+    text-decoration: none;
+}
+.services-grid > .services-grid-two{
+    height: 50vh;
+    background-color: blueviolet;
+}
+.services-grid > .services-grid-two > ul{
+    display: flex;
+    flex-direction: column;
+}
+.services-grid > .services-grid-two > ul > li{
+    list-style-type: none;
+}
+.services-grid > .services-grid-two > ul > li > a{
+    text-decoration: none;
+}
+.services-grid > .services-grid-three{
+    height: 50vh;
+    background-color: coral;
+}
+.services-grid > .services-grid-three > ul{
+    display: flex;
+    flex-direction: column;
+}
+.services-grid > .services-grid-three > ul > li{
+    list-style-type: none;
+}
+.services-grid > .services-grid-three > ul > li > a{
+    text-decoration: none;
+}
+/* services end */
+
