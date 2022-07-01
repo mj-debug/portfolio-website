@@ -14,10 +14,13 @@ body{
     font-size: 17px;
     background-color: #EEFBFB;
 }
-/* Home begins */
+
 /* nav bar begins */
+.header{
+    background-color: #12232E;  
+}
 header{
-    height: 90vh;
+    height: 10vh;
     background-color: #12232E;
 }
 .nav-bar{
@@ -43,28 +46,12 @@ header{
     text-decoration: none;
     color: #EEFBFB;
 }
-.nav-bar > button{
-    top: 590px;
-    left: 10px;
-    padding: 10px;
-    border: 50px;
-    margin-top: 20px;
-    margin-left: 370px;
-    border-radius: 40px;
-    position: absolute;
-    border: 0px solid transparent;
-    background-color: #4DA8DA; 
-}
-.nav-bar > button > p{
-    font-size: 15px;
-}
-.nav-bar > button> p > a{
-    color: #EEFBFB;
-    text-decoration: none; 
-}
 /* nav bar ends */
+
+/* Home begins */
 .main{
-    margin-top: 120px;
+    height: 85vh;
+    background-color: #12232E;
 }
 .main-first{
     height: 220px;
