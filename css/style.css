@@ -12,19 +12,22 @@ html{
 body{
     font-family: mj-NotoSans-Regular;
     font-size: 17px;
-    background-color: #12232E;
+    background-color: #EEFBFB;
 }
 /* Home begins */
 /* nav bar begins */
 header{
-    height: 97vh;
+    height: 90vh;
     background-color: #12232E;
 }
 .nav-bar{
     display: flex;
     color: #EEFBFB;
-    margin-top: 30px;
+    position: relative;
     justify-content: space-evenly;
+}
+.nav-bar-1 > p{
+    margin-top: 30px;
 }
 .nav-bar-2 > ul{
     display: flex;
@@ -33,14 +36,34 @@ header{
 }
 .nav-bar-2 > ul > li{
     margin-right: 30px;
+    margin-top: 30px;
     list-style-type: none;
 }
 .nav-bar-2 > ul > li > a{
     text-decoration: none;
     color: #EEFBFB;
 }
+.nav-bar > button{
+    top: 590px;
+    left: 10px;
+    padding: 10px;
+    border: 50px;
+    margin-top: 20px;
+    margin-left: 370px;
+    border-radius: 40px;
+    position: absolute;
+    border: 0px solid transparent;
+    background-color: #4DA8DA; 
+}
+.nav-bar > button > p{
+    font-size: 15px;
+}
+.nav-bar > button> p > a{
+    color: #EEFBFB;
+    text-decoration: none; 
+}
 /* nav bar ends */
-main{
+.main{
     margin-top: 120px;
 }
 .main-first{
@@ -108,82 +131,172 @@ main{
     font-size: 20px;
     margin-top: 15px;
 }
-.about > .about-2 > button{
-    padding: 10px;
-    border: 50px;
-    margin-top: 20px;
-    margin-left: 370px;
-    border-radius: 40px;
-    border: 0px solid transparent;
-    background-color: #12232E; 
-}
-.about > .about-2 > button > p{
-    font-size: 15px;
-    color: #EEFBFB;
-}
-.about > .about-2 > button > p > a{
-    color: #EEFBFB;
-    text-decoration: none; 
-}
 /* About ends */
 
 /* services begins */
 .services{
-    height: 100vh;
+    height: 90vh;
     background-color: #EEFBFB;
 }
-.services > h1{
+.services > div > div > h1{
     text-align: center;
+    margin-top: 100px;
 }
-.services > p{
+.services > div > div > p{
     text-align: center;
 }
 .services-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
+    margin-left: 90px;
+    margin-top: 100px;
 }
 .services-grid > .services-grid-one{
     height: 50vh;
-    background-color: blue;
+    width: 50vh;
+    background-color: #EEFBFB;
+    box-shadow: 5px 5px 5px 5px;
+
 }
 .services-grid > .services-grid-one > ul{
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 .services-grid > .services-grid-one > ul > li{
     list-style-type: none;
+    margin-bottom: 30px;
 }
 .services-grid > .services-grid-one > ul > li > a{
     text-decoration: none;
 }
+.services-grid > .services-grid-one > ul > li > div{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    position: relative;
+    margin-top: 10px;
+    background-color: #12232E;
+}
+.services-grid > .services-grid-one > ul > li > div > img{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.services-grid > .services-grid-one > ul > li > p{
+    margin: 10px;
+}
 .services-grid > .services-grid-two{
     height: 50vh;
-    background-color: blueviolet;
+    width: 50vh;
+    background-color: #EEFBFB;
+    box-shadow: 5px 5px 5px 5px;
 }
 .services-grid > .services-grid-two > ul{
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 .services-grid > .services-grid-two > ul > li{
     list-style-type: none;
+    margin-bottom: 30px;
 }
 .services-grid > .services-grid-two > ul > li > a{
     text-decoration: none;
 }
+.services-grid > .services-grid-two > ul > li > div{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    position: relative;
+    margin-top: 10px;
+    background-color: #12232E;
+}
+.services-grid > .services-grid-two > ul > li > div > img{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.services-grid > .services-grid-two > ul > li > p{
+    margin: 10px;
+}
 .services-grid > .services-grid-three{
     height: 50vh;
-    background-color: coral;
+    width: 50vh;
+    background-color: #EEFBFB;
+    box-shadow: 5px 5px 5px 5px;
 }
 .services-grid > .services-grid-three > ul{
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 .services-grid > .services-grid-three > ul > li{
     list-style-type: none;
+    margin-bottom: 30px;
 }
 .services-grid > .services-grid-three > ul > li > a{
     text-decoration: none;
 }
+.services-grid > .services-grid-three > ul > li > div{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    position: relative;
+    margin-top: 10px;
+    background-color: #12232E;
+}
+.services-grid > .services-grid-three > ul > li > div > img{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.services-grid > .services-grid-three > ul > li > p{
+    margin: 10px;
+}
 /* services end */
+hr{
+    color: #12232E;
+    font-weight: 1000;
+}
 
+/*Contact page begins*/
+.Contact{
+	height: 80vh;
+    background-color: #12232E;
+}
+.Contact > div > form{
+    margin-top: 60px;
+	margin-left: 360px;
+}
+.Contact > div > form > h2{
+    color: #EEFBFB;
+}
+.Contact > div > form > label{
+    color: #EEFBFB;
+}
+.Contact > div > form > input{
+	width: 40%;
+	padding: 20px 100px;
+	margin: 8px 0;
+}
+.Contact > div > form > textarea{
+	width: 40%;
+	padding: 100px 100px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+.Contact > div > button{
+	padding: 10px;
+    margin-left: 360px;
+    background-color: #4DA8DA;
+    border: 0px solid transparent;
+}
+.Contact > div > button > a{
+	color: #EEFBFB;
+	font-size: 15px;
+	margin: 20px;
+	text-decoration: none;
+}
+/*Contact page ends``*/
