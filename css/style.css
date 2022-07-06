@@ -12,22 +12,22 @@ html{
 body{
     font-family: mj-NotoSans-Regular;
     font-size: 17px;
-    background-color: #EEFBFB;
 }
 
 /* nav bar begins */
-.header{
-    background-color: #12232E;  
-}
-header{
-    height: 10vh;
-    background-color: #12232E;
-}
 .nav-bar{
+    height: 10vh;
+    width: 100%;
     display: flex;
+    position: fixed;
     color: #EEFBFB;
-    position: relative;
+    background-color: #12232E;
     justify-content: space-evenly;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1000;
 }
 .nav-bar-1 > p{
     margin-top: 30px;
@@ -46,23 +46,28 @@ header{
     text-decoration: none;
     color: #EEFBFB;
 }
+.nav-bar-2 > ul > li > a:hover{
+    color: #4DA8DA;
+}
 /* nav bar ends */
 
 /* Home begins */
-.main{
-    height: 85vh;
+.home{
+    height: 90vh;
     background-color: #12232E;
 }
-.main-first{
+.home > .home-first{
+    padding: 100px 0px;
+}
+.home-first >  .main{
     height: 220px;
     width: 220px;
     border-radius: 100%;
     border: 5px solid #4DA8DA;
     position: relative;
-    margin-top: 70px;
     margin-left: 370px;
 }
-.main-first > img{
+.home-first > .main > img{
     height: 200px;
     width: 200px;
     top: 10px;
@@ -70,38 +75,52 @@ header{
     border-radius: 100%;
     position: absolute;
 }
-.main-second{
+.home-second{
     margin-top: 30px;
 }
-.main-second > h2{
+.home-second > h2{
     color: #4DA8DA;
     font-size: 15px;
     margin-left: 370px;
 }
-.main-second > h1{
+.home-second > h1{
     color: #EEFBFB;
     font-size: 55px;
     margin-left: 370px;
     margin-top: 10px;
 }
-.main-second > p{
+.home-second > p{
     color: #EEFBFB;
     margin-left: 370px;
     margin-top: 10px;
+}
+.home-second > button{
+	padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 360px;
+    background-color: #4DA8DA;
+    border: 0px solid transparent;
+}
+.home-second > button > a{
+    color: #EEFBFB;
+	font-size: 15px;
+	margin: 20px;
+	text-decoration: none;
 }
 /* Home ends */
 
 /* About begins */
 .about{
     display: flex;
-    height: 100vh;
+    height: 90vh;
     position: relative;
     justify-content: space-around;
     background-color: #EEFBFB;
 }
 .about > .about-1 > img{
-    height: 500px;
-    margin-top: 150px;
+    height: 400px;
+    margin-top: 100px;
     border: 15px solid #12232E; 
     border-radius: 20px;
 }
@@ -127,7 +146,7 @@ header{
 }
 .services > div > div > h1{
     text-align: center;
-    margin-top: 100px;
+    padding: 30px;
 }
 .services > div > div > p{
     text-align: center;
@@ -243,47 +262,53 @@ header{
     margin: 10px;
 }
 /* services end */
-hr{
-    color: #12232E;
-    font-weight: 1000;
-}
 
 /*Contact page begins*/
 .Contact{
-	height: 80vh;
+	height: 90vh;
     background-color: #12232E;
+}
+.Contact > div > h2{
+    color: #EEFBFB;
+    padding-top: 45px;
+    margin-left:20em;
 }
 .Contact > div > form{
     margin-top: 60px;
 	margin-left: 360px;
-}
-.Contact > div > form > h2{
-    color: #EEFBFB;
 }
 .Contact > div > form > label{
     color: #EEFBFB;
 }
 .Contact > div > form > input{
 	width: 40%;
-	padding: 20px 100px;
+	padding: 20px 15px;
 	margin: 8px 0;
+    border-radius: 15px;
+    border: 0px solid transparent;
 }
 .Contact > div > form > textarea{
-	width: 40%;
-	padding: 100px 100px;
+	width: 42%;
+	padding: 50px 15px;
 	margin: 8px 0;
 	box-sizing: border-box;
+    border-radius: 15px;
+    border: 0px solid transparent;
 }
 .Contact > div > button{
 	padding: 10px;
+    border-radius: 15px;
     margin-left: 360px;
     background-color: #4DA8DA;
     border: 0px solid transparent;
 }
 .Contact > div > button > a{
 	color: #EEFBFB;
-	font-size: 15px;
+	font-size: 17px;
 	margin: 20px;
 	text-decoration: none;
 }
-/*Contact page ends``*/
+/*Contact page ends
+
+
+/* Media Queries */
